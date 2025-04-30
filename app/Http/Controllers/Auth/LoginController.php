@@ -29,7 +29,7 @@ class LoginController extends Controller {
 
         $user = User::whereEmail($email)->first();
         auth()->login($user);
-        return redirect()->route('home');
+        return redirect()->route('bienvenido');
     }
 
 }
